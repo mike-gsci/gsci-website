@@ -1,0 +1,15 @@
+# GSCI Website v0.1
+
+Static GitHub Pages website based on the first twelve sections of the Canva
+“GSCI Website v1.1 Launch Candidate” design.
+
+## Upload
+Upload all files in this folder to the root of the `main` branch of:
+`mike-gsci/gsci-website`
+
+## Still to add before launch
+- Real LinkedIn company/profile URL
+- Governance PDF files and links
+- Google Analytics / Search Console IDs
+- Final custom domain `gsci.uk`
+- Any final photography/Canva imagery required
