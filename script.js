@@ -1,13 +1,1 @@
-
-const toggle=document.querySelector('.menu-toggle');
-const nav=document.querySelector('.main-nav');
-if(toggle&&nav){
-  toggle.addEventListener('click',()=>{
-    const open=nav.classList.toggle('open');
-    toggle.setAttribute('aria-expanded', String(open));
-    toggle.textContent=open?'✕':'☰';
-  });
-}
-document.querySelectorAll('a[href="#contact"]').forEach(a=>{
-  a.addEventListener('click',()=>nav?.classList.remove('open'));
-});
+document.querySelectorAll('.conversation').forEach(a=>a.addEventListener('click',e=>{}));
