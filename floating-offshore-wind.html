@@ -61,6 +61,12 @@ footer a{color:#79bec8;text-decoration:none}
   .left h1{font-size:34px} .left .sub{font-size:17px} .story{font-size:15px}
   .hero-result .big{font-size:38px} .card h2,.evidence h2{font-size:20px} .card p,.evidence ul{font-size:14px}
 }
+
+.nav-placeholder{
+  visibility:hidden !important;
+  pointer-events:none !important;
+}
+
 </style>
 </head>
 <body>
@@ -75,7 +81,14 @@ footer a{color:#79bec8;text-decoration:none}
       <div class="brand-strap">Global Insight, <span>Intelligent Outcomes</span></div>
     </div>
   </a>
-  <nav><a href="insights.html">INSIGHTS</a></nav>
+  <nav>
+        <a class="nav-placeholder" aria-hidden="true">HOME</a>
+        <a class="nav-placeholder" aria-hidden="true">SERVICES</a>
+        <a href="insights.html" class="active">INSIGHTS</a>
+        <a class="nav-placeholder" aria-hidden="true">ABOUT</a>
+        <a class="nav-placeholder" aria-hidden="true">GOVERNANCE</a>
+        <a class="nav-placeholder" aria-hidden="true">CONTACT</a>
+        </nav>
   <a class="cta" href="#contact">ARRANGE A CONVERSATION</a>
 </header>
 

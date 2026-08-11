@@ -28,11 +28,11 @@ nav a.active{color:#ff6400}
 .eyebrow{color:#ff6400;font-size:24px;letter-spacing:2px;margin-bottom:28px}
 .left h1{font-size:41px;line-height:1.15;margin:0 0 18px;font-weight:700}
 .left .sub{font-size:20px;line-height:1.4;color:#f0f3f6;margin:0 0 28px;max-width:560px}
-.story{font-size:18px;line-height:1.46;color:#f3f3f3;max-width:570px}
+.story{font-size:16.3px;line-height:1.38;color:#f3f3f3;max-width:570px}
 .story p{margin:0 0 14px}
 .story strong{color:#fff}
 
-.right{display:grid;grid-template-rows:auto auto 1fr;gap:9px;transform:translateY(-10px)}
+.right{display:grid;grid-template-rows:auto auto auto;gap:9px;transform:translateY(-10px);align-content:start}
 .hero-result{background:rgba(255,255,255,.90);border-radius:14px;border-top:4px solid #ff6400;padding:18px 24px 20px;color:#07396b;text-align:center}
 .hero-result .label{font-size:18px;font-weight:700;letter-spacing:.3px;margin-bottom:3px}
 .hero-result .numbers{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 5px}
@@ -44,7 +44,7 @@ nav a.active{color:#ff6400}
 .card{background:rgba(255,255,255,.88);border-radius:14px;border-top:4px solid #ff6400;padding:18px 22px;color:#07396b}
 .card h2{font-size:24px;margin:0 0 10px}
 .card p{font-size:17px;line-height:1.42;margin:0}
-.evidence{background:rgba(255,255,255,.88);border-radius:14px;border-top:4px solid #ff6400;padding:14px 22px;color:#07396b;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;min-height:0}
+.evidence{background:rgba(255,255,255,.88);border-radius:14px;border-top:4px solid #ff6400;padding:12px 22px;color:#07396b;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;min-height:0}
 .evidence h2{font-size:24px;margin:0 0 9px}
 .evidence ul{font-size:16px;line-height:1.35;margin:0;padding-left:20px}
 .pdf-btn{display:inline-flex;align-items:center;justify-content:center;background:#003b70;color:#fff;text-decoration:none;border-radius:9px;padding:13px 18px;font-weight:700;white-space:nowrap}
@@ -61,6 +61,12 @@ footer a{color:#79bec8;text-decoration:none}
   .left h1{font-size:34px} .left .sub{font-size:17px} .story{font-size:15px}
   .hero-result .big{font-size:38px} .card h2,.evidence h2{font-size:20px} .card p,.evidence ul{font-size:14px}
 }
+
+.nav-placeholder{
+  visibility:hidden !important;
+  pointer-events:none !important;
+}
+
 </style>
 </head>
 <body>
@@ -75,7 +81,14 @@ footer a{color:#79bec8;text-decoration:none}
       <div class="brand-strap">Global Insight, <span>Intelligent Outcomes</span></div>
     </div>
   </a>
-  <nav><a href="insights.html">INSIGHTS</a></nav>
+  <nav>
+        <a class="nav-placeholder" aria-hidden="true">HOME</a>
+        <a class="nav-placeholder" aria-hidden="true">SERVICES</a>
+        <a href="insights.html" class="active">INSIGHTS</a>
+        <a class="nav-placeholder" aria-hidden="true">ABOUT</a>
+        <a class="nav-placeholder" aria-hidden="true">GOVERNANCE</a>
+        <a class="nav-placeholder" aria-hidden="true">CONTACT</a>
+        </nav>
   <a class="cta" href="#contact">ARRANGE A CONVERSATION</a>
 </header>
 
@@ -85,9 +98,9 @@ footer a{color:#79bec8;text-decoration:none}
     <h1>Last Energy</h1>
     <p class="sub">Supporting the Welsh Government Last Energy Task and Finish Group through evidence-based industrial intelligence.</p>
     <div class="story">
-      <p><strong>The Challenge</strong><br>Wales needed to understand the manufacturing capability that could support a future Last Energy supply chain — not simply identify companies already working in offshore wind.</p>
-      <p><strong>The Intelligence</strong><br>GSCI combined manufacturing knowledge, supplier intelligence and direct engagement. Last Energy was introduced to local stakeholders, potential sites were explored, supplier events were organised in Cardiff and Swansea, and targeted one-to-one meetings and company visits connected the developer with Welsh capability.</p>
-      <p><strong>The Outcome</strong><br>As Welsh capability became visible, Last Energy’s expected Welsh content increased from approximately 10% to 80% — demonstrating the potential value of active supply-chain intelligence and engagement.</p>
+      <p><strong>The Challenge</strong><br>Last Energy was exploring Wales as a potential location for investment, manufacturing and long-term deployment, but initially had only limited visibility of the manufacturing capability already available across the Welsh supply chain.</p>
+      <p><strong>The Intelligence</strong><br>Mike Gillard became involved after being approached by a specialist Scottish consultancy he had worked with previously. He introduced Last Energy to Welsh Government and other relevant Welsh stakeholders, then helped build a targeted supplier-engagement programme using Industry Wales networks, Business Wales Events, direct communications and LinkedIn.</p>
+      <p><strong>The Outcome</strong><br>Supplier events in Cardiff and Swansea, structured one-to-one meetings and manufacturing site visits gave Last Energy direct evidence of Welsh capability. As confidence increased, expected Welsh content rose from approximately 10% to around 80%.</p>
     </div>
   </div>
 
@@ -105,11 +118,11 @@ footer a{color:#79bec8;text-decoration:none}
     <div class="grid">
       <div class="card">
         <h2>What Changed?</h2>
-        <p>The project moved from a relatively modest expectation of Welsh participation to a much broader understanding of the manufacturing, engineering and supply-chain capability available in Wales.</p>
+        <p>Rather than relying on assumptions about the Welsh supply chain, Last Energy met manufacturers directly, saw engineering capability first-hand and gained a much broader understanding of what could potentially be sourced in Wales.</p>
       </div>
       <div class="card">
         <h2>Why It Matters</h2>
-        <p>The opportunity was not simply about identifying suppliers. Direct engagement, events, introductions and site visits helped turn industrial capability into a credible proposition for inward investment.</p>
+        <p>The work showed how targeted engagement, stakeholder connections and manufacturing intelligence can materially influence inward-investment decisions before contracts are awarded.</p>
       </div>
     </div>
 
@@ -118,10 +131,11 @@ footer a{color:#79bec8;text-decoration:none}
         <h2>Evidence at a Glance</h2>
         <ul>
           <li>Client: Last Energy</li>
-          <li>Programme: Last Energy Task and Finish Group</li>
-          <li>Engagement: Cardiff and Swansea supplier events, one-to-ones and site visits</li>
-          <li>Methodology: manufacturing intelligence, supplier engagement and capability matching</li>
-          <li>Strategic contribution: potential Welsh content increased from approximately 10% to 80%</li>
+          <li>Sector: Advanced Nuclear Energy</li>
+          <li>Role: Strategic Supply Chain Development and Stakeholder Engagement</li>
+          <li>Supplier events: Cardiff (c.120), Swansea (c.104)</li>
+          <li>Engagement: one-to-one supplier meetings and manufacturing site visits</li>
+          <li>Measured impact: expected Welsh content increased from approximately 10% to around 80%</li>
         </ul>
       </div>
       <a class="pdf-btn" href="001 - GSCI Last Energy(2).pdf" target="_blank">READ FULL CASE STUDY</a>
