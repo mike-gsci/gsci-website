@@ -1,0 +1,14 @@
+GSCI WEBSITE - STAGE 2 CONTENT & STRUCTURE PASS
+
+1. Added the agreed three-paragraph GSCI commercial proposition immediately below the Home hero.
+2. Added four explicit service routes: Industrial Intelligence, Trade & Export Intelligence, Supply Chain Intelligence, Strategic Advisory.
+3. Sharpened Services opening copy around actionable intelligence.
+4. Integrated four case-study PDFs into documents/case-studies.
+5. Replaced the two coming-soon Insights cards with Rail Strategy and Creating the GSCI Industrial Intelligence Model.
+6. Integrated five controlled GIGMS PDFs into documents and removed the obsolete GIGMS Overview PDF dependency.
+7. Governance page now acts as the GIGMS overview and provides five controlled downloads.
+8. Connected Industrial Intelligence to the three retained explanatory/model sub-pages.
+9. GSCI Model now returns to Industrial Intelligence as its parent page.
+10. Standardised footer governance anchors and regenerated sitemap.xml.
+
+Internal missing-link audit: PASS - no missing local targets.

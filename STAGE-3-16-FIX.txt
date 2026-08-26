@@ -1,0 +1,1 @@
+Stage 3.16: Cookie consent banner CSS is injected by cookie-consent.js so it appears consistently on every HTML page, including pages with inline CSS. No visual website design changes made.
