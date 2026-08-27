@@ -246,10 +246,34 @@
   }
 
   window.GSCI = window.GSCI || {};
+
+  // Track email enquiry clicks only when Analytics consent has been accepted.
+  function trackEmailClicks() {
+    document.addEventListener('click', function (e) {
+      const link = e.target.closest && e.target.closest('a[href^="mailto:"]');
+      if (!link) return;
+      if (getChoice() !== 'accepted') return;
+      if (typeof window.gtag !== 'function') return;
+
+      const href = link.getAttribute('href') || '';
+      const email = href.replace(/^mailto:/i, '').split('?')[0];
+      const text = (link.textContent || '').trim();
+
+      window.gtag('event', 'email_click', {
+        email_address: email,
+        link_text: text,
+        link_url: href,
+        page_location: window.location.href,
+        page_title: document.title
+      });
+    }, true);
+  }
+
   window.GSCI.openCookieSettings = function () { showBanner(); };
 
   document.addEventListener('DOMContentLoaded', function () {
     injectConsentStyles();
+    trackEmailClicks();
     const choice = getChoice();
     if (choice === 'accepted') loadAnalytics();
     else if (choice !== 'rejected') showBanner();
