@@ -1,6 +1,6 @@
 (function () {
   'use strict';
-  const GA_ID = 'G-VHGSSBMG89';
+  const GA_ID = 'G-VHGSSBMGB9';
   const STORAGE_KEY = 'gsci_cookie_consent';
 
   // Inject banner styles here so the consent UI works on every page,
